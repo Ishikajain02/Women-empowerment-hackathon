@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jobstyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+  *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  }
+
+
+body {
+  margin: 15px 30px;
+  font-size: 17px;
+  padding: 8px;
+}
+
+.container {
+  background-color: azure;
+  padding: 50px 100px 50px 100px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+fieldset {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.mainheading {
+  text-align: left;
+  padding-left: 20px;
+}
+ input[type="submit"] {
+  background-color: #3a999c;
+  color: white;
+  text-decoration: solid;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(82, 156, 138, 0.759);
+}
+    </style>
+    <div class="container">
+      <form>
+        <fieldset>
+          <h1 class="mainheading">Contact Form</h1>
+          <h4>  It's compulsory to fill up all the fields below.</h4>
+        </fieldset>
+        <p style=color:red;font-size:20px;">
+          <b><u>EMERGENCY NUMBERS(BE QUICK)</u> => </b>
+          <b>181, 10921, 1091, 100,112,103</b>
+        </p>
+        <br />
+        <p>
+          Your Name:
+          <input
+            type="text"
+            name="name"
+            id=""
+            placeholder="Enter Your Name"
+            required
+          />
+        </p>
+
+        <p>
+          Your Email: <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+          Contact number :
+          <input
+            type="text"
+            name="name"
+            id=""
+            placeholder="Enter Your phone number"
+            required
+          />
+        </p>
+        <p>
+          Alternate Contact number :
+          <input
+            type="text"
+            name="name"
+            id=""
+            placeholder="Enter the phone number"
+            required
+          />
+        </p>
+        <p>
+          Your Alternate Email:
+          <input type="email" name="email" id="email" required />
+        </p>
+
+        <p>
+          Address
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter your address (Do include near by area or 
+                         landmark)*"
+            cols="40"
+            rows="5"
+          ></textarea>
+        </p>
+
+        <p>
+          <select>
+            <option value="">Select the options below</option>
+            <option value="job_inquiry">Stalking</option>
+            <option value="complaint">Harrasment</option>
+            <option value="complaint">Eve teasing</option>
+            <option value="complaint">Kidnapping</option>
+            <option value="complaint">Attempt to murder</option>
+            <option value="complaint">Acid Attack</option>
+            <option value="complaint">Domestic Violence</option>
+          </select>
+        </p>
+
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>

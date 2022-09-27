@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Women Safety</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="location.js"></script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+     
+      #map {
+        height: 100%;
+      }
+
+      #menubar {
+        width: 1600px !important;
+      }
+
+      ul#menu {
+        transform: translatex(30%) !important;
+      }
+
+      footer {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      footer a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        float: left;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" class="py-8">
+
+        <a class="navbar-brand" href="#">
+          <img src="photo.jpeg" width="30" height="30" alt="">
+        </a>
+          
+              
+            
+          <a class="navbar-brand" href="#"><b>NAARI</b></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+              
+            </ul>
+            
+            <div class="mx-2">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#signupmodal">SIGN UP</button>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginmodal">LOGIN</button>
+            </div>
+            
+          </div>
+        </nav>
+  
+  
+  
+        <!--MODAL FOR SIGNUP-->
+  <!-- Modal -->
+  <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="signupmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupmodal">SIGN UP</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+  
+            <div class="form-group">
+              <label for="exampleInputName1">Your Name</label>
+              <input type="text" class="form-control" id="exampleInputName1" aria-describedby="textHelp">
+              
+            </div>
+  
+  
+  
+  
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+              <label for="cexampleInputPassword1"> Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--MODAL FOR LOGININ-->
+<!-- Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="loginmodal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginmodal">LOGININ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">LOGIN</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+
+<div id="logger"></div>
+    <div id="map"></div>
+
+<br>
+<br>
+<br>
+
+    <footer>
+        <a href="#">FAQ</a>    
+        <a href="#">CONTACT US</a>    
+        <a href="#">TERMS OF USE</a>       
+        <a class="copyright" href="#">&COPY: 2022 | NAARI</a>    
+           
+      </footer>
+    <script>
+      var map;
+      var service;
+      var infowindow;
+
+      function initMap() {
+        var pyrmont = new google.maps.LatLng(-33.8665433, 151.1956316);
+        infowindow = new google.maps.InfoWindow();
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: pyrmont,
+          zoom: 15,
+        });
+
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            function (position) {
+              var pyrmont = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude,
+              };
+              //pyrmont = new google.maps.LatLng(pos.lat, pos.lng);
+              infowindow.setPosition(pyrmont);
+              infowindow.setContent("Location found.");
+              infowindow.open(map);
+              map.setCenter(pyrmont);
+
+              var request = {
+                location: pyrmont,
+                radius: "500",
+                query: "police station",
+                fields: [
+                  "name",
+                  "formatted_address",
+                  "international_phone_number",
+                  "geometry",
+                ],
+              };
+
+              service = new google.maps.places.PlacesService(map);
+              service.textSearch(request, callback);
+            },
+            function () {
+              handleLocationError(true, infoWindow, map.getCenter());
+            }
+          );
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(
+          browserHasGeolocation
+            ? "Error: The Geolocation service failed."
+            : "Error: Your browser doesn't support geolocation."
+        );
+        infoWindow.open(map);
+      }
+
+      function callback(results, status) {
+        //  var infowindow = new google.maps.InfoWindow();
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            var place = results[i];
+            createMarker(results[i], infowindow);
+          }
+        }
+      }
+
+      function createMarker(place, infowindow) {
+        //var infowindow = new google.maps.InfoWindow();
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location,
+        });
+
+        var request = {
+          reference: place.reference,
+        };
+
+        service.getDetails(request, function (details, status) {
+          google.maps.event.addListener(marker, "click", function () {
+            infowindow.setContent(
+              details.name +
+                "<br />" +
+                details.formatted_address +
+                "<br />" +
+                details.formatted_phone_number
+            );
+            infowindow.open(map, this);
+          });
+        });
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbl-QdcG2sHyqxz4Qu_ZE7pjmZNY1KP7I&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

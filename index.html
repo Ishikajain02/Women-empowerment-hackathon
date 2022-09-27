@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="location.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>NAARI</title>
+</head>
+<body>
+  <br>
+  <br>
+
+
+<section id="title">
+    <div class="container-fluid"> 
+      <!-- Nav Bar -->
+       <nav class="navbar navbar-expand-lg navbar-dark "> 
+
+        <a class="navbar-brand" href="#">
+          <img src="photo.jpeg" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand" href="#">NAARI</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="map.html">Navigation</a> 
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="safety.html">Safety Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+
+            <div class="mx-2">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#signupmodal">SIGN UP</button>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginmodal">LOGIN</button>
+            </div>
+      </nav>
+
+      <!-- Title -->
+       <div class="row">
+        <div class="col-lg-6">
+          <h1>
+            Are you in TROUBLE?
+          </h1>
+          
+          <button type="button" class="btn btn-danger btn-lg btn-download"> <a style="color: white;" class="nav-link" href="map.html"> <b>I'm in DANGER</b></a></button>
+          <button type="button" class="btn btn-outline-light btn-lg btn-download"> Show me more</button>
+        </div>
+
+      </div>
+    </div>
+  </section> 
+
+
+
+<!-- <div class="maincontainer"> -->
+  <!-- <div id="logger"></div> -->
+
+    <!-- NAV BAR -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" class="py-8" >
+
+      <a class="navbar-brand" href="#">
+        <img src="photo.jpeg" width="40" height="40" alt="">
+      </a>
+        
+            
+          
+        <a class="navbar-brand" href="#"><b>NAARI</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="safety.html">Safety Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+
+            
+            
+          </ul>
+          
+          <div class="mx-2">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#signupmodal">SIGN UP</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginmodal">LOGIN</button>
+          </div>
+          
+        </div>
+      </nav> 
+    <div class="row">
+        <div class="col-lg-7">
+          <h1>
+            Are you in TROUBLE?
+          </h1>
+          
+          <button type="button" class="btn btn-danger btn-lg btn-download"><i class="fab fa-apple"></i> I'm in DANGER</button>
+          <button type="button" class="btn btn-outline-light btn-lg btn-download"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+<!-- <p style="font-weight:1000; font-size: 30px;" ARE YOU IN TROUBLE?</p> -->
+      <!-- <button type="button" class="btn btn-danger btn-lg" style="margin-left:5%; margin-top: 30%;">I'm in DANGER</button> -->
+
+      <!--MODAL FOR SIGNUP-->
+<!-- Modal -->
+<div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="signupmodal" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupmodal">SIGN UP</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div class="form-group">
+            <label for="exampleInputName1">Your Name</label>
+            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="textHelp">
+            
+          </div>
+
+
+
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="cexampleInputPassword1"> Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+      <!--MODAL FOR LOGININ-->
+<!-- Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="loginmodal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginmodal">LOGININ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">LOGIN</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+
+
+      
+<!--<div class="card-group" style="padding:4% 11% 0 11%">
+  <div class="card">
+    <img src="my-wife-doesnt-work-poster1.jpg" class="card-img-top" alt="..." width=300px height=400px>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card mx-2">
+    <img src="my-wife-doesnt-work-poster1.jpg" class="card-img-top" alt="..." width=300px height=400px>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card mx-2">
+    <img src="my-wife-doesnt-work-poster1.jpg" class="card-img-top" alt="..." width=300px height=400px>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>-->
+<div class="card-group" style="padding:4% 11% 0 11%">
+  <div class="card">
+    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="..." width=300px height=400px>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">“The best protection any woman can have… is courage.”
+      </p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card mx-2">
+    <img src="https://miro.medium.com/max/1080/1*hxEKr8Rse2vtEEUeo_qf2Q.jpeg" class="card-img-top" alt="..." width=300px height=400px>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">"Feminism isn't about making women stronger. Women are already strong, it's about changing the way the world perceives that strength."</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card mx-2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTduhCpYxgge5WbWwcF1-ERrEw4pAk7TZkYiQ&usqp=CAU" class="card-img-top" alt="..." width=300px height=400px>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">“Every girl and every woman, has the potential to make this world a better place, and that potential lies in the act of thinking higher thoughts and feeling deeper things. When women and girls, everywhere, begin to see themselves as more than inanimate objects; but as beautiful beings capable of deep feelings and high thoughts, this has the capacity to create change all around. The kind of change that is for the better.”</p>
+      </small></p>
+    </div>
+  </div>
+</div>
+ 
+
+<br>
+<br>
+
+<!--<div class="menu text-center">
+      <div class="container">
+        <div class="box">
+          <div class="content">
+            <img src="webd.png" />
+            <p>
+              Web development is the work involved in developing a website for
+              the Internet or an intranet.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="datascience.jpg" />
+            <p>
+              A data scientist is a professional responsible for collecting,
+              analyzing and interpreting extremely large amounts of data
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="computervision.jpg" />
+            <p>
+              Computer vision is a field of artificial intelligence (AI) that
+              enables computers and systems to derive meaningful information
+              from digital images, videos and other visual inputs
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="campus.jpg" />
+            <p>
+              Campus ambassador programmes provide college students with a
+              platform to become a brand's representative.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="BlockChain-Developer-Duple-IT-Solutions-1.png" />
+            <p>
+              A blockchain developer is a software developer who focuses on
+              blockchain technology. Developers program, develop, and test
+              software and systems.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img
+              src="png-transparent-product-manager-product-management-self-improvement-text-logo-business-thumbnail.png"
+            />
+            <p>
+              An entrepreneur in residence is a temporary role where the
+              individual provides a company with their expertise
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="app-development-concept-illustration_114360-5164.jpg" />
+            <p>
+              An app developer's typical responsibilities include coding,
+              designing, application management, troubleshooting, monitoring
+              updates and possible security threats, and providing end user
+              support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+  <div class="menu text-center">
+    <div class="container">
+      <div class="box">
+        <div class="content">
+          <img src="https://miro.medium.com/max/650/1*ZRStsuBwm5EDHuM9tAZNPg.jpeg" >
+          <p>
+            Eve teasing literally means annoying or irritating women. It is referred to as an act of harassing women playfully or maliciously, physically or pshycholgically to make fun, irritate, provoke, annoy, embarrass through comments, remarks, gestures, jokes, physical contact and taunts.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRniFXl2TytaF257EQBc4dQW-HWoMTi2g8Ij5hY9P_Weg&s" />
+          <p>
+            Sexual harassment happens when one person uses sexual words, gestures, looks, or touches that may make another person feel uncomfortable or unsafe. Sexual harassment is a form of discrimination. It means that someone is treated differently because of his or her gender. It may be repeated or it may be very offensive on a one-time basis. It is usually intentional, but sometimes people don’t know that they are sexually harassing another person. Anyone can be harassed and anyone can be a harasser.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <img src="https://www.thenewsminute.com/sites/default/files/styles/slideshow_image_size/public/stress-rep-image_750.jpg?itok=T7xiEBsO" />
+          <p>
+            Stalking is unwanted and/or repeated surveillance by an individual or group toward another person.[1] Stalking behaviors are interrelated to harassment and intimidation and may include following the victim in person or monitoring them. The term stalking is used with some differing definitions in psychiatry and psychology, as well as in some legal jurisdictions as a term for a criminal offense.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <img src="data:image/jpeg;base64,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"  />  
+           <p>
+            Domestic abuse, also called "domestic violence" or "intimate partner violence", can be defined as a pattern of behavior in any relationship that is used to gain or maintain power and control over an intimate partner. Abuse is physical, sexual, emotional, economic or psychological actions or threats of actions that influence another person. This includes any behaviors that frighten, intimidate, terrorize, manipulate, hurt, humiliate, blame, injure, or wound someone.
+            
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <img src="data:image/jpeg;base64,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" />
+    
+          <p>
+            Attempt to murder.—Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to 1[imprisonment for life], or to such punishment as is hereinbefore mentioned.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <img
+            src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/05/14/1042386-acid-attack.jpg"
+          />
+          <p>
+            An acid attack,[1] also called acid throwing, vitriol attack, or vitriolage, is a form of violent assault[2][3][4] involving the act of throwing acid or a similarly corrosive substance onto the body of another "with the intention to disfigure, maim, torture, or kill"
+          </p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content">
+          <img src="https://tennews.in/wp-content/uploads/2019/04/dawry.jpg" />
+          <p>
+            A dowry is a payment, such as property or money, paid by the bride's family to the groom or his family at the time of marriage. Dowry contrasts with the related concepts of bride price and dower. While bride price or bride service is a payment by the groom, or his family, to the bride, or her family, dowry is the wealth transferred from the bride, or her family, to the groom, or his family.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <br>
+
+<!--<footer class="blog-footer">
+  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer> -->
+<footer>
+  <a href="#">FAQ</a>    
+  <a href="#">CONTACT US</a>    
+  <a href="#">TERMS OF USE</a>       
+  <a class="copyright" href="#">&COPY: 2022 | NAARI</a>    
+     
+</footer>
+
+
+
+
+
+
+          <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
